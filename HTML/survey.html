@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Market Research Survey</h2>
+    <p>Please take a few moments to complete this satisfaction survey.</p>
+    <hr>
+    <form method="post" action="google.com.vn">
+        <b>What is your age range?</b><br>
+        <select name="age" style="width:50% ; height: 25px; font-size: 16px;">
+            <option>18-24</option>
+            <option>25-34</option>
+            <option>35-50</option>
+            <option>50+</option>
+        </select><br><br>
+        <b>What is your yearly income range?</b><br>
+        <select name="money" style="width:50% ; height: 25px;  font-size: 16px;">
+            <option>$0-$25,000</option>
+            <option>$25,001-$50,000</option>
+            <option>$50,001-$100,000</option>
+            <option>$100,000+</option>
+        </select><br><br>
+        <b>Gender Identity</b><br>
+        <table>
+            <tr>
+                <td style="width: 10px;"><input type="radio" value="male" name="GenderIdentity"></td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td><input type="radio" value="female" name="GenderIdentity"></td>
+                <td>Female</td>
+            </tr>
+            <tr>
+                <td><input type="radio" value="nonbinary" name="GenderIdentity"></td>
+                <td>Nonbinary</td>
+            </tr>
+            <tr>
+                <td><input type="radio" onclick="click()" value="other" name="GenderIdentity"></td>
+                <td>Other</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="text" onclick="clicked()" name="GenderIdentity"><br></td>
+            </tr>
+            <tr id="comment"  style="display:none;font-size:14px;">
+                <td></td>
+                <td><i>Maximum of <b>250</b> characters.</i></td>
+                <td><i>Currently Used: <b>0</b> characters.</i></td>
+            </tr>
+        </table>
+        <b>Which of the following products have your purchased in the last 2 months. Please check all that apply.</b><br>
+        <table>
+            <tr>
+                <td style="width: 10px;"><input type="checkbox" name="product" value="product_1"></td>
+                <td>Product 1</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="product" value="product_2"></td>
+                <td>Product 2</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="product" value="product_3"></td>
+                <td>Product 3</td>
+            </tr>
+        </table><br>
+        <b>How often would you use our new product?</b><br>
+        <table>
+            <tr>
+                <td><input type="radio" value="Daily" name="time"></td>
+                <td>Daily</td>
+            </tr>
+            <tr>
+                <td><input type="radio" value="Weekkly" name="time"></td>
+                <td>Weekkly</td>
+            </tr>
+            <tr>
+                <td><input type="radio" value="Monthly" name="time"></td>
+                <td>Monthly</td>
+            </tr>
+        </table><br>
+        <b>What would you pay for the new product?</b><br>
+        <table>
+            <tr>
+                <th>$</th>
+                <td><input style="width: 80px;" type="number"></td>
+                <td>.</div></td>
+                <td><input style="width: 10px;" type="number"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="font-size:14px;">Dollars</td>
+                <td></td>
+                <td style="font-size:14px;">Cents</td>
+            </tr>
+        </table><br>
+        <b>What features would you like to see in the product.</b><br>
+        <input style="width:100%; height: 200px;" type="text"><br>
+        <p>Please rate your lever of agreement with the following sttement.</p><br>
+        <table id="lever" style="border-top: 1px solid #636363; border-collapse:collapse;border-left: 1px solid #636363;border-right: 1px solid #636363; text-align: center;">
+            <tr style="background-color: #f7f4f4;">
+                <th style="width: 300px; border: 1px solid #636363;"></th>
+                <th style="border: 1px solid #636363; width: 100px;">Strongly</th>
+                <th style="border: 1px solid #636363;  width: 100px;">Disagree</th>
+                <th style="border: 1px solid #636363;  width: 100px;">Agree</th>
+                <th style="border: 1px solid #636363;  width: 100px;">Strongly Agree</th>
+            </tr>
+            <tr>
+                <th style="text-align: left; border: 1px solid #636363;">Our product are priced fairly.</th>
+                <td style="border: 1px solid #636363;"><label><input name="lever_1" type="radio"><br>1</label></td>
+                <td style="border: 1px solid #636363;"><label><input name="lever_1" type="radio"><br>2</td>
+                <td style="border: 1px solid #636363;"><label><input name="lever_1" type="radio"><br>3</td>
+                <td style="border: 1px solid #636363;"><label><input name="lever_1" type="radio"><br>4</td>
+            </tr>
+            <tr style="background-color: #f7f4f4;">
+                <th style="text-align: left; border: 1px solid #636363;">Our product are high quality.</th>
+                <td style="border: 1px solid #636363;"><label><input name="lever_2" type="radio"><br>1</td>
+                <td style="border: 1px solid #636363;"><label><input name="lever_2" type="radio"><br>2</td>
+                <td style="border: 1px solid #636363;"><label><input name="lever_2" type="radio"><br>3</td>
+                <td style="border: 1px solid #636363;"><label><input name="lever_2" type="radio"><br>4</td>
+            </tr>
+            <tr>
+                <th style="text-align: left;">You would recommend our product to a friend or coworker.</th>
+                <td style="border-left: 1px solid #636363;"><label><input name="lever_3" type="radio"><br>1</td>
+                <td style="border-left: 1px solid #636363;"><label><input name="lever_3" type="radio"><br>2</td>
+                <td style="border-left: 1px solid #636363;"><label><input name="lever_3" type="radio"><br>3</td>
+                <td style="border-left: 1px solid #636363;"><label><input name="lever_3" type="radio"><br>4</td>
+            </tr>
+        </table>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+<style>
+    form {
+        width: 100%;
+        height: 30px;
+    }
+    body {
+        font-family:optima;
+    }
+
+</style>
+<script>
+
+    function click() {
+        let a = document.getElementById("comment");
+        a.style.display= "table-row";
+        
+    }
+    function clicked() {
+        let a = document.getElementById("comment");
+        a.style.display= "table-row";
+        
+    }
+</script>
