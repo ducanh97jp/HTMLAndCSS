@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="div"></div>
+    <hr>
+    <table>
+        <tr>
+            <th></th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>A</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>B</th>
+            <td></td>
+            <td style="background-color: white;"></td>
+            <td></td>
+            <td style="background-color: white;"></td>
+            <td></td>
+            <td style="background-color: white;"></td>
+            <td></td>
+            <td style="background-color: white;"></td>
+        </tr>
+        <tr>
+            <th>C</th>
+            <td style="background-color: white;"></td>
+            <td></td>
+            <td style="background-color: white;"></td>
+            <td></td>
+            <td style="background-color: white;"></td>
+            <td></td>
+            <td style="background-color: white;"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>D</th>
+            <td></td>
+            <td style="background-color: white;"></td>
+            <td></td>
+            <td style="background-color: white;"></td>
+            <td></td>
+            <td style="background-color: white;"></td>
+            <td></td>
+            <td style="background-color: white;"></td>
+        </tr>
+        <tr>
+            <th>E</th>
+            <td style="background-color: white;"></td>
+            <td></td>
+            <td style="background-color: white;"></td>
+            <td></td>
+            <td style="background-color: white;"></td>
+            <td></td>
+            <td style="background-color: white;"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>F</th>
+            <td></td>
+            <td style="background-color: white;"></td>
+            <td></td>
+            <td style="background-color: white;"></td>
+            <td></td>
+            <td style="background-color: white;"></td>
+            <td></td>
+            <td style="background-color: white;"></td>
+        </tr>
+        <tr>
+            <th>G</th>
+            <td style="background-color: white;"></td>
+            <td></td>
+            <td style="background-color: white;"></td>
+            <td></td>
+            <td style="background-color: white;"></td>
+            <td></td>
+            <td style="background-color: white;"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>H</th>
+            <td></td>
+            <td style="background-color: white;"></td>
+            <td></td>
+            <td style="background-color: white;"></td>
+            <td></td>
+            <td style="background-color: white;"></td>
+            <td></td>
+            <td style="background-color: white;"></td>
+        </tr>
+        <tr style="height:30px;"></tr>
+    </table>
+</body>
+
+</html>
+<style>
+        table {
+            border-collapse: collapse;
+            background-color: rgb(251, 192, 42);
+            width: 550px;
+            height: 550px;
+        }
+        th {
+            font-size: 25px;
+            width:60px;
+            height:30px; 
+            background-color: rgb(251, 192, 42);
+        }
+        tr:nth-child(even) {
+            background-color: white;
+        }
+        tr:nth-child(odd) {
+            background-color: black;
+        }
+        td:nth-child(odd) {
+            background-color: black;
+        }
+    </style>
+<script>
+    let arr = [ "", "A", "B", "C", "D", "E", "F", "G", "H"];
+    let a;
+    a = "<table>";
+    for (let i = 0; i <= 9; i++) {
+        if (i == 0) {
+            a += "<tr>";
+            for (let j = 0; j <= 9; j++) {
+                if (j == 0) {
+                    a += "<th style='font-size: 25px; width:60px;height:30px; background-color: rgb(251, 192, 42);'></th>";
+                } else if(j == 9) {
+                    a += "<th style='width:20px;'></th>";
+                } else {
+                    a += "<th style='font-size: 25px; width:30px; height:30px; background-color: rgb(251, 192, 42);'>" + j + "</th>";
+                }
+            }
+            a += "</tr>";
+        } else if(i == 9) {
+            a += "<tr></tr>";
+        } else {
+            a += "<tr>";
+            for (let e = 0; e <= 8; e++) {
+                if (e == 0) {
+                    a += "<th style='font-size: 25px; width:30px; height:60px; background-color: rgb(251, 192, 42);'>" + arr[i] + "</th>";
+                } else {
+                    if(i % 2 == 0){
+                        if( e % 2 != 0) {
+                            a += '<td style="background-color: black; width:60px; height:60px;"></td>';
+                        } else {
+                            a += '<td style="background-color: white; width:60px; height:60px;"></td>';
+                        }
+                    } else {
+                        if( e % 2 != 0) {
+                            a += '<td style="background-color: white; width:60px; height:60px;"></td>';
+                        } else {
+                            a += '<td style="background-color: black; width:60px; height:60px;"></td>';
+                        }
+                    }
+                }
+            }
+            a += "</tr>";
+        }
+    }
+    a += "</table>";
+    document.getElementById("div").innerHTML = a;
+</script>
