@@ -1,0 +1,9 @@
+#menu {
+    width: 100px;
+    height: 200px;
+    border: 1px solid #000;
+    background-color: lightgrey;
+    border-radius: 10px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+}
