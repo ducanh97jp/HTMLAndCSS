@@ -1,0 +1,62 @@
+ol {
+    /* Màu nền */
+    background: #ff9999;
+    /* Khoảng cách nội dung với viền */
+    padding: 20px;
+}
+
+ul {
+    /* Màu nền */
+    background: #3399ff;
+    /* Khoảng cách nội dung với viền */
+    padding: 20px;
+    /* Kiểu đánh dấu bằng hình ảnh trong danh sách */
+    list-style-image: url('http://agilearn.vn/draftfile.php/263/user/draft/510120718/bullet_red%20_2.png');
+    /* Kiểu đánh dấu bằng ký hiệu trong danh sách */
+    list-style: square inside url("http://agilearn.vn/draftfile.php/263/user/draft/510120718/bullet_red%20_2.png");
+}
+
+ol li {
+    /* Màu nền */
+    background: #ffe5e5;
+    /* Khoảng cách nội dung với viền */
+    padding: 5px;
+     /* Khoảng cách lề trái/ của phần tử với bên trái */
+    margin-left: 35px;
+    /* margin-top: (khoảng cách trên)
+    margin-right:   (Khoảng cách phải)
+    margin-bottom: (khoảng cách dưới)*/ 
+
+}
+
+ul li {
+    /* Màu nền */
+    background: #cce5ff;
+    /* Khoảng cách lề / của phần tử với xung quanh */
+    margin: 5px;
+}
+
+ul.a {
+     /* Kiểu đánh dấu chấm tròn rỗng trong danh sách */
+    list-style-type: circle;
+       /* vị trí đặt điểm đánh dấu bên trong  */
+    list-style-position: inside;
+}
+
+ul.b {
+    /* Kiểu đánh dấu hình vuông đen nhỏ trong danh sách */
+    list-style-type: square;
+      /* vị trí đặt điểm đánh dấu bên ngoài  */
+    list-style-position: outside;
+
+}
+
+ol.c {
+/* Kiểu đánh dấu thứ tự theo số la mã  trong danh sách */
+    list-style-type: upper-roman;
+}
+
+ol.d {
+/* Kiểu đánh dấu thứ tự theo bảng chứ cái thường trong danh sách */
+    list-style-type: lower-alpha;
+}
