@@ -1,0 +1,30 @@
+table {
+    /* xoá viền kép của bảng */
+    border-collapse: collapse;
+    /* Độ rộng bảng */
+    width: 100%;
+}
+
+th, td {
+    /* Căn trái nội dung trong thẻ td, th */
+    text-align: left;
+    /* Khoảng cách giữa đường viền và nội dung */
+    padding: 8px;
+}
+
+tr:nth-child(even){
+    /* Màu nền dòng chẵn của bảng */
+    background-color: #f2f2f2
+}
+
+th {
+    /* Màu nền của thẻ th */
+    background-color: #4CAF50;
+    /* màu chữ  */
+    color: white;
+}
+/* }
+    Chiều cao
+    height: 50px;
+    căn chỉnh theo chiều dọc
+    vertical-align: bottom; */
