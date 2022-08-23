@@ -1,9 +1,50 @@
-#menu {
-    width: 100px;
-    height: 200px;
-    border: 1px solid #000;
-    background-color: lightgrey;
-    border-radius: 10px;
-    -moz-border-radius:10px;
-    -webkit-border-radius:10px;
+table.wiki {
+    width: 100%;
+    border-spacing: 20px;
+   
 }
+li.menu1 {
+    display: inline;
+    padding: 10px;
+}
+table.menu {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+body{
+    padding:50px 100px;
+}
+tr table {
+     border: 1px double #fefcfc;
+}
+td.bai_viet {
+    color: blue;
+}
+table.page {
+    padding:20px 20px;
+    width: 100%;
+    padding: 20px;
+}
+p.para {
+    padding: 20px;
+}
+td.box {
+    border: 1px solid;
+    width: 45%;
+}
+th.head {
+    font-size: 20px;
+    text-align: left;
+}
+div.linh-vuc {
+    color: blue;
+}
+div.linh-vuc1 {
+    color: blue;
+    font-size: 50px;
+}
+b.number {
+    font-size:30px;
+}
+
