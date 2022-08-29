@@ -1,0 +1,109 @@
+body {
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color:#dddddd;
+}
+#head {
+    width: 100%;
+    background-color:#f5f5f5;
+    height: 100px;
+    position: relative;
+}
+#head img {
+    border-radius: 50%;
+    width: 60px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+#head h1 {
+    font-size: 50px;
+    position: absolute;
+    top:15px;
+    left:20px;
+    color:rgb(103, 145, 61);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav {
+    background-color: dodgerblue;
+    min-height: 50px;
+}
+nav ul li {
+    display: inline;
+    font-size: 25px;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+    top: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+}
+nav ul li:hover a {
+    background-color: rgb(47, 91, 236);
+    color: aliceblue;
+}
+#section {
+    background-color:#f5f5f5;
+    width: 60%;
+    height: 920px;
+    float: left;
+    color: black;
+    margin-bottom: 10px;
+}
+#section img {
+    width: 95%;
+    padding: 20px;
+    
+}
+#section h2 {
+    padding: 20px;
+}
+#section h2:hover {
+    color: dodgerblue;
+    cursor: pointer;
+}
+#section article {
+    margin-top: 10px;
+    border-top:5px solid #dddddd;
+}
+#section article img {
+    width: 40%;
+    height: 80px;
+    float: left;
+    margin-right: 10px;
+}
+#section article h2 {
+    font-size: 18px;
+    color: black;
+}
+#section article:hover h2 {
+    color: dodgerblue;
+    cursor: pointer;
+}
+#aside {
+    background-color: #f5f5f5;
+    width: 39%;
+    float: left;
+    height: 920px;
+    margin-left: 1%;
+    margin-bottom: 10px;
+}
+#aside h2 {
+    padding: 10px;
+}
+#aside ul li {
+    padding: 10px;
+}
+#aside ul li:hover {
+    cursor: pointer;
+    color: dodgerblue;
+}
+#footer {
+    background-color: #f5f5f5;
+    width: 100%;
+    clear: both;
+    text-align: left;
+    padding: 50px 20px;
+}
+
