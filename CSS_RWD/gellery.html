@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,43 +10,65 @@
         * {
             box-sizing: border-box;
         }
+        h2, h4 {
+            padding: 10px;
+        }
         div {
             border: 1px solid #cdcdcd;
-            width: 20%;
-            margin: 2%;
+            width: 23%;
             float: left;
+            margin: 1%;
         }
+
         div:hover {
             border: 1px solid #000000;
         }
+
         img {
             width: 100%;
         }
+
         p {
             clear: both;
             padding: 10px;
         }
+        @media only screen and (max-width:700px) {
+            div {
+                width: 48%;
+                float: left;
+                margin: 1%;
+            }
+        }
+        @media only screen and (max-width:500px) {
+            div {
+                width:100%;
+            }
+        }
     </style>
 </head>
+
 <body>
     <h2>Reponsive Image Gallery</h2>
     <h4>Resize the browser window to see effect.</h4>
-    <div class="img1">
-        <img src="img1.jpeg" alt="img">
-        <p>Add a description of the image here</p>
-    </div>
-    <div class="img2">
-        <img src="img1.jpeg" alt="img">
-        <p>Add a description of the image here</p>
-    </div>
-    <div class="img3">
-        <img src="img1.jpeg" alt="img">
-        <p>Add a description of the image here</p>
-    </div>
-    <div class="img4">
-        <img src="img1.jpeg" alt="img">
-        <p>Add a description of the image here</p>
-    </div>
-    <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+        <div>
+            <img src="img1.jpeg" alt="img">
+            <p>Add a description of the image here</p>
+        </div>
+        <div>
+            <img src="img1.jpeg" alt="img">
+            <p>Add a description of the image here</p>
+        </div>
+        <div>
+            <img src="img1.jpeg" alt="img">
+            <p>Add a description of the image here</p>
+        </div>
+        <div>
+            <img src="img1.jpeg" alt="img">
+            <p>Add a description of the image here</p>
+        </div>
+    <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px
+        wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by
+        side. For screens smaller than 500px, the images will stack vertically (100%).</p>
 </body>
+
 </html>
