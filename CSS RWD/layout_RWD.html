@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Users/nguyenducanh/Documents/GitHub/HTMLAndCSS/CSSLayout/facebook/fontawesome-free-6.1.2-icon/css/all.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .head_link {
+            height: 50px;
+            background-color: rgb(0, 0, 0, 0.7);
+        }
+        .head_link ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            opacity: 0.7;
+            display: inline;
+            font-size: 20px;
+            padding: 10px ;
+            float: left;
+            color: white;
+            height: 50px;
+        }
+        button {
+            float: right;
+            font-size: 20px;
+            padding: 10px;
+            background-color: rgb(0, 0, 0, 0.0);
+            border: none;
+            color: white;
+            opacity: 0.7;
+            height: 50px;
+        }
+        li:hover, button:hover {
+            background-color: black;
+            opacity: 1.0;
+        }
+        .link {
+            background-color: #cdcdcd;
+            width: 15%;
+            float: left;
+            height: 500px;
+        }
+        .link a {
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            padding: 10px;
+        }
+        a:hover {
+            color: white;
+            background-color: dodgerblue;
+        }
+        .main {
+            width: 70%;
+            padding: 20px;
+            text-align: left;
+            float: left;
+            height: 500px;
+        }
+        .right {
+            background-color: #cdcdcd;
+            width: 15%;
+            float: left;
+            height: 500px;
+        }
+        .right div {
+            background-color: #f5f5f5;
+            margin: 30px 10px;
+            text-align: center;
+            height: 100px;
+            padding: 30px;
+            font-size: 20px;
+        }
+        .footer {
+            background-color: rgb(58, 55, 55);
+            text-align: center;
+            padding: 20px;
+            height: 50px;
+            color: white;
+            font-size: 16px;
+            clear: both;
+        }
+        @media only screen and (max-width:680px) {
+            .link {
+                width: 30%;
+                height:400px
+            }
+            .main {
+                width: 70%;
+                height: auto;
+            }         
+            .right {
+                display: none;
+                height: auto;
+            }   
+            .head_link {
+                height: 45px;
+            }
+            .head_link ul li , button {
+                font-size: 18px;
+                padding: 15px;
+                height: 45px;
+            }
+            .footer {
+                height: 45px;
+                font-size: 15px;
+                padding: 15px;
+            }
+        }
+        @media only screen and (max-width:500px) {
+            .link, .main, .right {
+                width: 100%;
+            }
+            .link {
+                height: auto;
+            }
+            .head_link {
+                height: 40px;
+                text-align: left;
+            }
+            .head_link ul li , button {
+                font-size: 16px;
+                padding: 10px;
+                height: 40px;
+            }
+            .footer {
+                height: 40px;
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="head_link">
+        <ul>
+            <li>Logo</li>
+            <li>Home</li>
+            <li>About</li>
+            <li>Project</li>
+            <li>Contact</li>
+        </ul>
+        <button><i class="fa-solid fa-right-to-bracket"></i>Login</button>
+    </div>
+    <div class="link">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+    <div class="main">
+        <div>
+        <h2>Welcome</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venam, quis nostrud exercitation ulamco laboris nisi ut aliquip ex es commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui offcia deserunt mollit anm id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt at labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <hr>
+    <div>
+        <h4>Test</h4>
+        <p>Lorem ipsum...</p>
+    </div>
+</div>
+    <div class="right">
+        <div>ADS</div>
+        <div>ADS</div>
+    </div>
+    <div class="footer">Footer Text</div>
+</body>
+</html>
