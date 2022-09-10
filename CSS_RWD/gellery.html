@@ -9,18 +9,28 @@
     <style>
         * {
             box-sizing: border-box;
-        }
-        h2, h4 {
-            padding: 10px;
-        }
-        div {
-            border: 1px solid #cdcdcd;
-            width: 23%;
-            float: left;
-            margin: 1%;
+            margin: 0;
+            padding: 0;
         }
 
-        div:hover {
+        h2,
+        h4 {
+            padding: 10px;
+        }
+
+        div {
+            border: none;
+            float: left;
+            padding: 10px;
+        }
+
+        div div {
+            text-align: center;
+            border: 1px solid #cdcdcd;
+            padding: 0;
+        }
+
+        div div:hover {
             border: 1px solid #000000;
         }
 
@@ -32,16 +42,164 @@
             clear: both;
             padding: 10px;
         }
-        @media only screen and (max-width:700px) {
-            div {
+
+        @media only screen and (min-width:700px) {
+            .col-md-1 {
+                width: 8.33%;
+            }
+
+            .col-md-2 {
+                width: 16.66%;
+            }
+
+            .col-md-3 {
+                width: 25%;
+            }
+
+            .col-md-4 {
+                width: 33.33%;
+            }
+
+            .col-md-5 {
+                width: 41.66%;
+            }
+
+            .col-md-6 {
+                width: 50%;
+            }
+
+            .col-md-7 {
+                width: 58.33%;
+            }
+
+            .col-md-8 {
+                width: 66.66%;
+            }
+
+            .col-md-9 {
+                width: 75%;
+            }
+
+            .col-md-10 {
+                width: 83.33%;
+            }
+
+            .col-md-11 {
+                width: 91.66%;
+            }
+
+            .col-md-12 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width:700px) and (min-width:500px) {
+
+            /* div {
                 width: 48%;
                 float: left;
                 margin: 1%;
+            } */
+            .col-sm-1 {
+                width: 8.33%;
+            }
+
+            .col-sm-2 {
+                width: 16.66%;
+            }
+
+            .col-sm-3 {
+                width: 25%;
+            }
+
+            .col-sm-4 {
+                width: 33.33%;
+            }
+
+            .col-sm-5 {
+                width: 41.66%;
+            }
+
+            .col-sm-6 {
+                width: 50%;
+            }
+
+            .col-sm-7 {
+                width: 58.33%;
+            }
+
+            .col-sm-8 {
+                width: 66.66%;
+            }
+
+            .col-sm-9 {
+                width: 75%;
+            }
+
+            .col-sm-10 {
+                width: 83.33%;
+            }
+
+            .col-sm-11 {
+                width: 91.66%;
+            }
+
+            .col-sm-12 {
+                width: 100%;
             }
         }
+
         @media only screen and (max-width:500px) {
-            div {
+
+            /* div {
                 width:100%;
+            } */
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
             }
         }
     </style>
@@ -50,22 +208,30 @@
 <body>
     <h2>Reponsive Image Gallery</h2>
     <h4>Resize the browser window to see effect.</h4>
+    <div class="col-md-3 col-sm-6 col-12">
         <div>
             <img src="img1.jpeg" alt="img">
             <p>Add a description of the image here</p>
         </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-12">
         <div>
             <img src="img2.jpeg" alt="img">
             <p>Add a description of the image here</p>
         </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-12">
         <div>
             <img src="img3.jpeg" alt="img">
             <p>Add a description of the image here</p>
         </div>
+    </div>
+    <div class="col-md-3 col-sm-6 col-12">
         <div>
             <img src="img4.jpeg" alt="img">
             <p>Add a description of the image here</p>
         </div>
+    </div>
     <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px
         wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by
         side. For screens smaller than 500px, the images will stack vertically (100%).</p>
