@@ -1,0 +1,624 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #f3f3f3;
+    overflow: auto;
+}
+
+.hidden {
+    height: 60px;
+}
+
+/* header */
+.header {
+    width: 79%;
+    background-color: rgb(132, 190, 248);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    position: fixed;
+    left: 9.9%;
+    z-index: 1;
+}
+
+.header img {
+    width: 50px;
+    height: 50px;
+}
+
+.header input {
+    width: 400px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.search {
+    position: relative;
+}
+
+.search button {
+    height: 30px;
+    width: 50px;
+    background-color: rgb(231, 146, 229);
+    border: 1px solid rgba(231, 146, 229, 0.2);
+    position: absolute;
+    left: 350px;
+}
+
+.login-shop a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.login-shop i {
+    color: blue;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.login-shop a:hover {
+    color: white;
+    background-color: dodgerblue;
+}
+
+#menu {
+    width: 200px;
+    height: 400px;
+    position: fixed;
+    top: 15px;
+    left: 10%;
+    background-color: rgb(132, 190, 248);
+    z-index: 2;
+    transition: top 1s;
+    opacity: 1;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 50px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#menuBtn {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(132, 190, 248);
+    text-align: center;
+    position: fixed;
+    left: 10%;
+    top: 3px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#menuBtn img {
+    width: 20px;
+    margin-top: 15px;
+}
+
+/* nav */
+.nav {
+    width: 80%;
+    background-color: rgb(231, 146, 229);
+    font-size: 20px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.nav ul {
+    text-align: center;
+
+}
+
+.nav ul li {
+    display: inline;
+    list-style-type: none;
+}
+
+.nav a {
+    line-height: 50px;
+    text-decoration: none;
+    padding: 12.5px 15px;
+}
+
+.nav a:hover {
+    background-color: rgb(221, 69, 163);
+    color: white;
+}
+
+/* banner */
+.banner {
+    width: 80%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #ca8db5), url("/image/gau-de-ghe.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    margin: auto;
+}
+
+.banner-text {
+    text-align: center;
+    color: #fff;
+    padding-top: 50px;
+    font-size: 40px;
+}
+
+.feature {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+    color: white;
+}
+
+.feature-box {
+    flex-wrap: wrap;
+    flex-basis: 20%;
+    align-items: center;
+}
+
+/* main */
+.main {
+    width: 100%;
+    padding: 30px 0;
+    background-color: #efefef;
+}
+
+.main-box {
+    width: 80%;
+    margin: auto;
+}
+
+.main-image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.image-gau {
+    position: relative;
+    flex-basis: 20%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: white;
+    align-items: flex-end;
+}
+
+.image-gau img {
+    width: 100%;
+    border-radius: 7px;
+    height: 200px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #ca8db5);
+    opacity: 0;
+    transition: 1s;
+}
+
+.image-gau:hover .overlay {
+    opacity: 1;
+}
+
+.main-image-text {
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%);
+    transition: 1s;
+}
+
+hr {
+    background-color: #fff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+
+.main-image-text p {
+    font-size: 14px;
+}
+
+.image-gau:hover .main-image-text {
+    bottom: 25%;
+    opacity: 1;
+}
+
+.main h1 {
+    height: 50px;
+    padding: 7px 10px;
+    color: white;
+    background-color: rgb(132, 190, 248);
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.main h1:hover {
+    background-color: rgb(94, 168, 242);
+}
+
+/* footer */
+.footer {
+    width: 80%;
+    padding: 100px 0 20px;
+    background-color: #cbc7c7;
+    position: relative;
+    margin: auto;
+}
+
+.title-text {
+    text-align: center;
+}
+
+.footer-row {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-row .bi {
+    color: #ca8db5;
+}
+
+.footer-left,
+.footer-right {
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-row h1 {
+    margin: 10px 0;
+}
+
+.footer-row p {
+    line-height: 35px;
+}
+
+.footer-img {
+    max-width: 370px;
+    opacity: 0.1;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.social-links {
+    text-align: center;
+}
+
+.social-links .bi {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    margin: 40px 5px 0;
+    color: #ca8db5;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.social-links .bi:hover {
+    color: #f90;
+}
+
+.social-links p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.footer-left .bi,
+.footer-right .bi {
+    font-size: 20px;
+    counter-reset: #ca8db5;
+    margin: 10px;
+}
+@media only screen and (max-width: 910px) and (min-width:768px) {
+    .header img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .login-shop a {
+        font-size: 18px;
+    }
+
+    .header input {
+        width: 300px;
+    }
+
+    .header button {
+        left: 250px;
+    }
+
+    #menuBtn {
+        width: 45px;
+        height: 45px;
+        top: -1px;
+    }
+
+    #menuBtn img {
+        height: 17px;
+    }
+    #menu {
+        width: 150px;
+        height: 250px;
+        top: 50px;
+        left: 10%;
+    }
+    nav ul li {
+        margin: 30px 15px;
+    }
+    .hidden {
+        height: 50px;
+    }
+
+    /* nav */
+    .nav {
+        font-size: 18px;
+    }
+
+    .nav a {
+        line-height: 40px;
+        text-decoration: none;
+        padding: 10px 8px;
+    }
+
+    /* banner */
+    .banner-text {
+        font-size: 30px;
+        padding-top: 30px
+    }
+
+    .feature {
+        margin-top: 40px;
+    }
+
+    .feature-box {
+        flex-basis: 26%;
+    }
+
+    /* main */
+    .image-gau img {
+        height: 170px;
+    }
+
+    .main-image-text p {
+        font-size: 13px;
+    }
+
+    .main-image-text h3 {
+        font-size: 16px;
+    }
+
+    .image-gau:hover .main-image-text {
+        bottom: 7%;
+    }
+
+    .main h1 {
+        font-size: 25px;
+        height: 40px;
+        padding: 7px 10px;
+        margin-bottom: 15px;
+    }
+
+    hr {
+        height: 1.5px;
+        margin: 10px auto;
+        width: 60%;
+    }
+
+    /* footer */
+    .footer {
+        padding: 60px 0 17px;
+    }
+
+    .title-text p {
+        font-size: 16px;
+    }
+
+    .footer-left,
+    .footer-right {
+        flex-basis: 45%;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    .footer-row h1 {
+        margin: 8px 0;
+        font-size: 25px;
+    }
+
+    .footer-row p {
+        line-height: 30px;
+    }
+
+    .footer-img {
+        max-width: 250px;
+    }
+
+    .social-links .bi {
+        height: 30px;
+        width: 30px;
+        font-size: 16px;
+        line-height: 30px;
+        margin: 25px 5px 0;
+    }
+
+    .social-links p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .footer-left .bi,
+    .footer-right .bi {
+        font-size: 15px;
+        margin: 5px;
+    }
+}
+    /* phone */
+    @media only screen and (max-width: 767px){
+    .header img {
+            width: 25px;
+            height: 25px;
+    }
+    .login-shop a {
+        font-size: 15px;
+        padding: 5px;
+    }
+    .header input {
+        width: 200px;
+        height: 20px;
+    }
+    .header button {
+        left: 150px;
+        height: 20px;
+        top:3px;
+    }
+    #menuBtn {
+        width: 30px;
+        height: 30px;
+        top:-9px;
+    }
+    #menuBtn img {
+        height: 12px;
+        width: 12px;
+    }
+    #menu {
+        width: 100px;
+        height: 150px;
+        top: 30px;
+        left: 10%;
+    }
+    nav ul li {
+        margin: 10px 10px;
+    }
+    .hidden {
+        height: 35px;
+    }
+    /* nav */
+    .nav {
+        font-size: 15px;
+    }
+    .nav a {
+        line-height: 30px;
+        text-decoration: none;
+        padding: 7px 5px;
+    }
+    /* banner */
+    .banner-text {
+        font-size: 20px;
+        padding-top: 30px
+    }
+    .banner {
+        height: 250px;
+    }
+    .feature {
+        margin-top: 20px;
+    }
+    .feature-box {
+        flex-basis: 25%;
+    }
+    .feature-box h1 {
+        font-size: 15px;
+    }
+    .feature-text {
+        font-size: 13px;
+    }
+    /* main */
+    .image-gau img {
+        height: 140px;
+    }
+    .main-image-text p {
+        font-size: 10px;
+    }
+    .main-image-text h3 {
+        font-size: 13px;
+    }
+    .image-gau:hover .main-image-text {
+        bottom:7%;
+    }
+    .main h1 {
+        font-size: 20px;
+        height: 30px;
+        padding: 5px 10px;
+    }
+    hr {
+        height: 1px;
+        margin: 5px auto;
+        width: 60%;
+    }
+    /* footer */
+    .footer {
+        padding: 40px 0;
+    }
+    .title-text p {
+        font-size: 13px;
+    }
+    .footer-left, .footer-right {
+        flex-basis: 48%;
+        padding: 0px;
+        margin-bottom: 10px;
+    }
+    .footer-row h1 {
+        margin: 8px 0;
+        font-size: 20px;
+    }
+    .footer-row p {
+        line-height: 30px;
+    }
+    .footer-img {
+        max-width: 150px;
+    }
+    .social-links .bi {
+        height: 20px;
+        width: 20px;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 15px 5px 0;
+    }
+    .social-links p {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+    .footer-left .bi, .footer-right .bi {
+        font-size: 13px;
+        margin: 5px;
+    }
+}
