@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">File</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Edit</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Selection</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  View
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Start Debugging</a></li>
+                  <li><a class="dropdown-item" href="#">Run Without Debugging</a></li>
+                  <li><a class="dropdown-item" href="#">Stop Debugging</a></li>
+                  <li><a class="dropdown-item" href="#">Restart Debugging</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Open Configurations</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Go
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Back</a></li>
+                  <li><a class="dropdown-item" href="#">Forward</a></li>
+                  <li><a class="dropdown-item" href="#">Last Edit Location</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Switch Editor</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Run
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Start Debugging</a></li>
+                  <li><a class="dropdown-item" href="#">Run Without Debugging</a></li>
+                  <li><a class="dropdown-item" href="#">Stop Debugging</a></li>
+                  <li><a class="dropdown-item" href="#">Restart Debugging</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Open Configuration</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Teminal
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">New teminal</a></li>
+                  <li><a class="dropdown-item" href="#">Spkit Teminal</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Run Task...</a></li>
+                  <li><a class="dropdown-item" href="#">Run Build Task...</a></li>
+                  <li><a class="dropdown-item" href="#">Run Active File</a></li>
+                  <li><a class="dropdown-item" href="#">Run Selected Text</a></li>
+                </ul>
+              </li><li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Windown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Minimize</a></li>
+                  <li><a class="dropdown-item" href="#">Zoom</a></li>
+                  <li><a class="dropdown-item" href="#">Tile Windown to Left of Screen</a></li>
+                  <li><a class="dropdown-item" href="#">Tile Windown to Right of Screen</a></li>
+                  <li><a class="dropdown-item" href="#">Replace Tiled Windown</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Switch Windown</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Help
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Get Start</a></li>
+                  <li><a class="dropdown-item" href="#">Show All Commands</a></li>
+                  <li><a class="dropdown-item" href="#">Documentation</a></li>
+                  <li><a class="dropdown-item" href="#">Editor Playground</a></li>
+                  <li><a class="dropdown-item" href="#">Release Notes</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Keyboard Shortcuts Reference</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+</body>
+</html>
