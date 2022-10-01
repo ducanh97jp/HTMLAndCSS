@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.header__nav ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+.header__banner {
+    background-image: url(/images/slider.jpg);
+    background-size: cover;
+}
