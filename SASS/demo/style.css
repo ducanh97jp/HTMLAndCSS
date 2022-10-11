@@ -1,0 +1,22 @@
+div {
+  background: rgb(139, 234, 139);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: 100%;
+  text-align: center;
+}
+div h1 {
+  color: red;
+}
+div p {
+  color: red;
+}
+div button {
+  color: red;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: 100%;
+  background-color: aqua;
+}/*# sourceMappingURL=style.css.map */

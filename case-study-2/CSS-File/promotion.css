@@ -1,0 +1,125 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.header-top {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(231, 231, 231);
+  padding: 0;
+}
+.header-top .row {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.header-top .col-5 {
+  padding: 0;
+}
+.header-top .col-5 ul {
+  display: flex;
+  align-items: flex-start;
+  padding: 0;
+}
+.header-top .col-5 ul li {
+  list-style-type: none;
+  margin: 5px;
+  padding: 2.5px;
+}
+.header-top .col-5 ul li a {
+  text-decoration: none;
+  padding: 10px;
+  color: rgb(112, 112, 112);
+  font-size: 12px;
+}
+.header-top .col-5 ul li a .bi {
+  padding: 10px;
+}
+.header-top .col-5 ul li:hover {
+  background-color: white;
+}
+.header-top .col-7 ul {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.header-top .col-7 ul li {
+  list-style-type: none;
+  margin: 5px;
+  padding: 2.5px;
+}
+.header-top .col-7 ul li a {
+  text-decoration: none;
+  padding: 10px;
+  color: rgb(112, 112, 112);
+  font-size: 12px;
+}
+.header-top .col-7 ul li a .bi {
+  padding: 10px;
+}
+.header-top .col-7 ul li:hover {
+  background-color: white;
+}
+
+.header-bottom {
+  height: 70px;
+  background-color: #f8f9fa;
+}
+.header-bottom .container {
+  padding: 0;
+}
+.header-bottom .header-logo {
+  margin-top: 20px;
+  padding: 0;
+}
+.header-bottom .header-logo img {
+  width: 80%;
+}
+.header-bottom .header__search {
+  position: relative;
+  margin-top: 10px;
+}
+.header-bottom .header__search .input-group {
+  height: 50px;
+}
+.header-bottom .header__search .input-group button {
+  background-color: white;
+  border: none;
+}
+.header-bottom .header__search .input-group button .bi {
+  color: tomato;
+  font-weight: bold;
+}
+.header-bottom .header__search .input-group input {
+  border: none;
+  font-size: 14px;
+}
+.header-bottom .header__search .input-group .sum {
+  border-right: 3px solid #f8f9fa;
+  width: 100px;
+  font-size: 14px;
+}
+.header-bottom .header__phone-number {
+  padding: 15px;
+}
+.header-bottom .header__phone-number .bi {
+  font-size: 30px;
+  color: tomato;
+}
+.header-bottom .header__phone-number h6 {
+  font-size: 17px;
+  color: tomato;
+  margin-bottom: 0;
+}
+.header-bottom .header__phone-number p {
+  font-size: 14px;
+}
+.header-bottom .header__shop {
+  padding: 15px;
+}
+.header-bottom .header__shop .bi {
+  padding: 15px 10px;
+  color: tomato;
+  font-size: 30px;
+}
+.header-bottom .header__shop p {
+  padding: 10px;
+}/*# sourceMappingURL=promotion.css.map */

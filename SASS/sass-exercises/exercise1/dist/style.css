@@ -1,0 +1,40 @@
+#container {
+  font-family: "Gotu", sans-serif;
+  font-size: 16px;
+  max-width: 800px;
+  margin: auto;
+}
+#container nav ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  justify-content: space-around;
+}
+#container nav ul li {
+  background-color: lightskyblue;
+  border: 2px solid #054f7d;
+  margin: -2px;
+  width: 100%;
+  text-align: center;
+  transition: 1s;
+}
+#container nav ul li a {
+  text-decoration: none;
+  color: #054f7d;
+}
+#container nav ul li:hover {
+  background-color: #054f7d;
+}
+#container nav ul li:hover a {
+  color: lightskyblue;
+  font-weight: bold;
+}
+#container h1 {
+  color: #054f7d;
+}
+
+@media screen and (max-width: 649px) {
+  #container nav ul li {
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=style.css.map */
