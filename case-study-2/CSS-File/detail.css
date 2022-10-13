@@ -503,6 +503,166 @@ body {
 .main-same-kind-list .container .card .card-money:hover {
   text-decoration: underline;
 }
+.main-same-kind-list .container .card .card-show-right {
+  position: absolute;
+  width: 220px;
+  background-color: #f8f9fa;
+  top: 0;
+  display: none;
+  z-index: 1;
+  padding: 10px;
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 10px;
+  height: 490px;
+  left: 90%;
+}
+.main-same-kind-list .container .card .card-show-right .show-head {
+  font-size: 14px;
+  display: block;
+}
+.main-same-kind-list .container .card .card-show-right .show-author {
+  font-size: 12px;
+  text-decoration: none;
+  color: rgb(24, 136, 102);
+}
+.main-same-kind-list .container .card .card-show-right .show-author:hover {
+  text-decoration: underline;
+}
+.main-same-kind-list .container .card .card-show-right .show-text {
+  font-size: 12px;
+  margin: 0;
+}
+.main-same-kind-list .container .card .card-show-right .show-text-more {
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+}
+.main-same-kind-list .container .card .card-show-right .show-text-more:hover {
+  text-decoration: underline;
+}
+.main-same-kind-list .container .card .card-show-right .show-money {
+  color: tomato;
+}
+.main-same-kind-list .container .card .card-show-right .show-in-shop {
+  border: none;
+  height: 50px;
+  width: 200px;
+  margin: 5px 0;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(24, 136, 102);
+}
+.main-same-kind-list .container .card .card-show-right .show-in-shop:hover {
+  background-color: tomato;
+}
+.main-same-kind-list .container .card .card-show-right .show-buy {
+  border: none;
+  height: 50px;
+  width: 200px;
+  margin: 5px 0;
+  border-radius: 5px;
+  color: white;
+  background-color: tomato;
+}
+.main-same-kind-list .container .card .card-show-right .show-buy:hover {
+  background-color: rgb(208, 82, 60);
+}
+.main-same-kind-list .container .card .card-show-right .show-like {
+  border: none;
+  height: 50px;
+  width: 200px;
+  margin: 5px 0;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: white;
+}
+.main-same-kind-list .container .card .card-show-right .show-like .bi {
+  color: red;
+  padding-right: 5px;
+}
+.main-same-kind-list .container .card .card-show-left {
+  position: absolute;
+  width: 220px;
+  background-color: #f8f9fa;
+  top: 0;
+  display: none;
+  z-index: 1;
+  padding: 10px;
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 10px;
+  height: 490px;
+  left: -220px;
+}
+.main-same-kind-list .container .card .card-show-left .show-head {
+  font-size: 14px;
+  display: block;
+}
+.main-same-kind-list .container .card .card-show-left .show-author {
+  font-size: 12px;
+  text-decoration: none;
+  color: rgb(24, 136, 102);
+}
+.main-same-kind-list .container .card .card-show-left .show-author:hover {
+  text-decoration: underline;
+}
+.main-same-kind-list .container .card .card-show-left .show-text {
+  font-size: 12px;
+  margin: 0;
+}
+.main-same-kind-list .container .card .card-show-left .show-text-more {
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+}
+.main-same-kind-list .container .card .card-show-left .show-text-more:hover {
+  text-decoration: underline;
+}
+.main-same-kind-list .container .card .card-show-left .show-money {
+  color: tomato;
+}
+.main-same-kind-list .container .card .card-show-left .show-in-shop {
+  border: none;
+  height: 50px;
+  width: 200px;
+  margin: 5px 0;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(24, 136, 102);
+}
+.main-same-kind-list .container .card .card-show-left .show-in-shop:hover {
+  background-color: tomato;
+}
+.main-same-kind-list .container .card .card-show-left .show-buy {
+  border: none;
+  height: 50px;
+  width: 200px;
+  margin: 5px 0;
+  border-radius: 5px;
+  color: white;
+  background-color: tomato;
+}
+.main-same-kind-list .container .card .card-show-left .show-buy:hover {
+  background-color: rgb(208, 82, 60);
+}
+.main-same-kind-list .container .card .card-show-left .show-like {
+  border: none;
+  height: 50px;
+  width: 200px;
+  margin: 5px 0;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: white;
+}
+.main-same-kind-list .container .card .card-show-left .show-like .bi {
+  color: red;
+  padding-right: 5px;
+}
+.main-same-kind-list .container .card:hover .card-show-right {
+  display: block;
+}
+.main-same-kind-list .container .card:hover .card-show-left {
+  display: block;
+}
 
 .main-information .container {
   padding: 0;
