@@ -371,7 +371,7 @@ body {
         background-color: white;
         padding: 0;
         position: absolute;
-        width: 200px;
+        width: 180px;
         top: 0;
         left: 95%;
         display: none;
@@ -466,12 +466,10 @@ body {
         }
         .card-show-right {
             @include show-content();
-            height: 490px;
             left:90%;
         }
         .card-show-left {
             @include show-content();
-            height: 490px;
             left:-220px;
         }
         
@@ -493,6 +491,10 @@ body {
     background-color: white;
     margin-left: 2px;
     margin-bottom: 2px;
+    .carousel-inner {
+        overflow: visible;
+    }
+    
     .card {
         border: none;
         height: 300px;
@@ -545,12 +547,10 @@ body {
         }
         .card-show-right {
             @include show-content();
-            height: 350px;
             left:90%;
         }
         .card-show-left {
             @include show-content();
-            height: 350px;
             left:-220px;
         }
     }

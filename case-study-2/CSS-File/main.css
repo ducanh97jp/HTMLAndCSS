@@ -228,7 +228,7 @@ body {
   background-color: white;
   padding: 0;
   position: absolute;
-  width: 200px;
+  width: 180px;
   top: 0;
   left: 95%;
   display: none;
@@ -345,7 +345,6 @@ body {
   padding: 10px;
   border: 1px solid rgb(194, 194, 194);
   border-radius: 10px;
-  height: 490px;
   left: 90%;
 }
 .main-right__new-product__list .card .card-show-right .show-head {
@@ -422,7 +421,6 @@ body {
   padding: 10px;
   border: 1px solid rgb(194, 194, 194);
   border-radius: 10px;
-  height: 490px;
   left: -220px;
 }
 .main-right__new-product__list .card .card-show-left .show-head {
@@ -527,6 +525,9 @@ body {
   margin-left: 2px;
   margin-bottom: 2px;
 }
+.main-right__hot-product__list .carousel-inner {
+  overflow: visible;
+}
 .main-right__hot-product__list .card {
   border: none;
   height: 300px;
@@ -587,7 +588,6 @@ body {
   padding: 10px;
   border: 1px solid rgb(194, 194, 194);
   border-radius: 10px;
-  height: 350px;
   left: 90%;
 }
 .main-right__hot-product__list .card .card-show-right .show-head {
@@ -664,7 +664,6 @@ body {
   padding: 10px;
   border: 1px solid rgb(194, 194, 194);
   border-radius: 10px;
-  height: 350px;
   left: -220px;
 }
 .main-right__hot-product__list .card .card-show-left .show-head {

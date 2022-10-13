@@ -172,6 +172,7 @@ body {
   left: -2px;
   width: 248px;
   background-color: white;
+  z-index: 1;
   display: none;
 }
 .nav .menu .nav-menu a {
@@ -287,6 +288,20 @@ body {
   padding: 10px 5px;
   font-size: 14px;
 }
+.main-event-today #time {
+  color: red;
+}
+.main-event-today #time .bi {
+  padding: 5px;
+  color: red;
+}
+.main-event-today #times {
+  color: red;
+}
+.main-event-today #times .bi {
+  padding: 5px;
+  color: red;
+}
 .main-event-today i {
   color: tomato;
 }
@@ -347,6 +362,20 @@ body {
   color: tomato;
   padding: 10px 5px;
   font-size: 14px;
+}
+.main-event-now #time {
+  color: red;
+}
+.main-event-now #time .bi {
+  padding: 5px;
+  color: red;
+}
+.main-event-now #times {
+  color: red;
+}
+.main-event-now #times .bi {
+  padding: 5px;
+  color: red;
 }
 .main-event-now i {
   color: tomato;
@@ -412,6 +441,20 @@ body {
   color: tomato;
   padding: 10px 5px;
   font-size: 14px;
+}
+.main-event-over .event-content #time {
+  color: red;
+}
+.main-event-over .event-content #time .bi {
+  padding: 5px;
+  color: red;
+}
+.main-event-over .event-content #times {
+  color: red;
+}
+.main-event-over .event-content #times .bi {
+  padding: 5px;
+  color: red;
 }
 .main-event-over .event-content i {
   color: tomato;
