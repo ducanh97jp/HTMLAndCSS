@@ -728,6 +728,9 @@ body {
   border: none;
   font-size: 14px;
 }
+.information-introduce .button button:hover {
+  background-color: rgb(217, 2, 2);
+}
 
 .main-information .col-3 {
   padding: 0;

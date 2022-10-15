@@ -854,7 +854,11 @@ body {
             border: none;
             font-size: $font-size;
         }
+        button:hover {
+            background-color: rgb(217, 2, 2);
+        }
     }
+    
 
 }
 
