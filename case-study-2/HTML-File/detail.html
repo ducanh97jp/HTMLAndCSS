@@ -16,6 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
         integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
         crossorigin="anonymous"></script>
+        <script src="../js/detail.js"></script>
 </head>
 
 <body>
@@ -154,7 +155,7 @@
                     </a>
                 </li>
                 <li class="col-5">
-                    <a href="#" class="menu-link">
+                    <a href="promotion.html" class="menu-link">
                         <img src="../image/khuyen-mai-hot.jpeg" alt="">
                         Chương Trình khuyến Mại
                     </a>
@@ -190,14 +191,14 @@
                                 <p><a href="#">Hinastu</a> (Dịch giả)</p>
                                 <h4>48.000 đ</h4>
                                 <p class="status">Tình trạng: <span>Còn hàng</span></p>
-                                <small>Tags: <a href=h"#">cuoc-xam-luoc-cua-be-muc</a> <a href="#">Truyện tranh Manga,
+                                <small>Tags: <a href="#">cuoc-xam-luoc-cua-be-muc</a> <a href="#">Truyện tranh Manga,
                                         Manhwa, Manhua
                                         khác</a></small>
                                 <div class="number input-group">
                                     <label>Số Lượng:&ensp;&ensp;</label>
-                                    <button>-</button>
-                                    <input type="text" value="1">
-                                    <button>+</button>
+                                    <button onclick="reduce()">-</button>
+                                    <input id="amount" type="text" value="1">
+                                    <button onclick="augment()">+</button>
                                 </div>
                                 <div class="button-buy">
                                     <button class="button-buy__in-cart">THÊM VÀO GIỎ HÀNG</button>
@@ -525,6 +526,18 @@
                                             <a href="#" class="bro">Soichiro Yamamoto</a>
                                             <p class="card-money col-5">30.000<sub>đ</sub></p>
                                         </div>
+                                        <div class="card-show-right">
+                                            <b class="show-head">Cuộc Xâm Lăng Của Bé Mực - Tập 8 (Tái Bản 2021)</b>
+                                            <a href="#" class="show-author">Anbe Masahiro</a>
+                                            <p class="show-text">Cuộc Xâm Lăng Của Bé Mực - Tập 8 Thật ra câu chuyện này tôi đã suy nghĩ từ trước rồi. 
+                                                Nhưng tôi chưa tập hợp những phác thảo ý tưởng thô và mất thời gian cho phần bối cảnh nên đã hoãn lại mãi. 
+                                                Rất may là cuối cùng cũng được phát hành. Thật khó để sử dụng nhân vật mới "ra lò", nhưng tôi nghĩ từ giờ tôi ...</p>
+                                            <a href="#" class="show-text-more">Xem thêm</a>
+                                            <b class="show-money">48.000<sub>đ</sub></b>
+                                            <button class="show-in-shop">THÊM VÀO GIỎ HÀNG</button>
+                                            <button class="show-buy">MUA NGAY</button>
+                                            <button class="show-like"><i class="bi bi-heart-fill"></i>Thêm vào yêu thích</button>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="carousel-body-item">
@@ -536,6 +549,18 @@
                                             <a href="#" class="bro">Nozomi Uda</a>
                                             <p class="card-money col-5">38.000<sub>đ</sub></p>
                                         </div>
+                                        <div class="card-show-right">
+                                            <b class="show-head">Cuộc Xâm Lăng Của Bé Mực - Tập 8 (Tái Bản 2021)</b>
+                                            <a href="#" class="show-author">Anbe Masahiro</a>
+                                            <p class="show-text">Cuộc Xâm Lăng Của Bé Mực - Tập 8 Thật ra câu chuyện này tôi đã suy nghĩ từ trước rồi. 
+                                                Nhưng tôi chưa tập hợp những phác thảo ý tưởng thô và mất thời gian cho phần bối cảnh nên đã hoãn lại mãi. 
+                                                Rất may là cuối cùng cũng được phát hành. Thật khó để sử dụng nhân vật mới "ra lò", nhưng tôi nghĩ từ giờ tôi ...</p>
+                                            <a href="#" class="show-text-more">Xem thêm</a>
+                                            <b class="show-money">48.000<sub>đ</sub></b>
+                                            <button class="show-in-shop">THÊM VÀO GIỎ HÀNG</button>
+                                            <button class="show-buy">MUA NGAY</button>
+                                            <button class="show-like"><i class="bi bi-heart-fill"></i>Thêm vào yêu thích</button>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="carousel-body-item">
@@ -546,6 +571,18 @@
                                             <a href="#" class="card-text">Kaguya-Sâm: Cuộc Chiến Tỏ Tình - Tập 2</a>
                                             <a href="#" class="bro">Aka Akasaka</a>
                                             <p class="card-money col-5">42.000<sub>đ</sub></p>
+                                        </div>
+                                        <div class="card-show-right">
+                                            <b class="show-head">Cuộc Xâm Lăng Của Bé Mực - Tập 8 (Tái Bản 2021)</b>
+                                            <a href="#" class="show-author">Anbe Masahiro</a>
+                                            <p class="show-text">Cuộc Xâm Lăng Của Bé Mực - Tập 8 Thật ra câu chuyện này tôi đã suy nghĩ từ trước rồi. 
+                                                Nhưng tôi chưa tập hợp những phác thảo ý tưởng thô và mất thời gian cho phần bối cảnh nên đã hoãn lại mãi. 
+                                                Rất may là cuối cùng cũng được phát hành. Thật khó để sử dụng nhân vật mới "ra lò", nhưng tôi nghĩ từ giờ tôi ...</p>
+                                            <a href="#" class="show-text-more">Xem thêm</a>
+                                            <b class="show-money">48.000<sub>đ</sub></b>
+                                            <button class="show-in-shop">THÊM VÀO GIỎ HÀNG</button>
+                                            <button class="show-buy">MUA NGAY</button>
+                                            <button class="show-like"><i class="bi bi-heart-fill"></i>Thêm vào yêu thích</button>
                                         </div>
                                     </div>
                                 </div>
@@ -559,6 +596,18 @@
                                             <a href="#" class="bro">Soubee Amako</a>
                                             <p class="card-money col-5">40.000<sub>đ</sub></p>
                                         </div>
+                                        <div class="card-show-right">
+                                            <b class="show-head">Cuộc Xâm Lăng Của Bé Mực - Tập 8 (Tái Bản 2021)</b>
+                                            <a href="#" class="show-author">Anbe Masahiro</a>
+                                            <p class="show-text">Cuộc Xâm Lăng Của Bé Mực - Tập 8 Thật ra câu chuyện này tôi đã suy nghĩ từ trước rồi. 
+                                                Nhưng tôi chưa tập hợp những phác thảo ý tưởng thô và mất thời gian cho phần bối cảnh nên đã hoãn lại mãi. 
+                                                Rất may là cuối cùng cũng được phát hành. Thật khó để sử dụng nhân vật mới "ra lò", nhưng tôi nghĩ từ giờ tôi ...</p>
+                                            <a href="#" class="show-text-more">Xem thêm</a>
+                                            <b class="show-money">48.000<sub>đ</sub></b>
+                                            <button class="show-in-shop">THÊM VÀO GIỎ HÀNG</button>
+                                            <button class="show-buy">MUA NGAY</button>
+                                            <button class="show-like"><i class="bi bi-heart-fill"></i>Thêm vào yêu thích</button>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="carousel-body-item">
@@ -570,6 +619,18 @@
                                             </a>
                                             <a href="#" class="bro">Koume Fujichika</a>
                                             <p class="card-money col-5">38.000<sub>đ</sub></p>
+                                        </div>
+                                        <div class="card-show-left">
+                                            <b class="show-head">Cuộc Xâm Lăng Của Bé Mực - Tập 8 (Tái Bản 2021)</b>
+                                            <a href="#" class="show-author">Anbe Masahiro</a>
+                                            <p class="show-text">Cuộc Xâm Lăng Của Bé Mực - Tập 8 Thật ra câu chuyện này tôi đã suy nghĩ từ trước rồi. 
+                                                Nhưng tôi chưa tập hợp những phác thảo ý tưởng thô và mất thời gian cho phần bối cảnh nên đã hoãn lại mãi. 
+                                                Rất may là cuối cùng cũng được phát hành. Thật khó để sử dụng nhân vật mới "ra lò", nhưng tôi nghĩ từ giờ tôi ...</p>
+                                            <a href="#" class="show-text-more">Xem thêm</a>
+                                            <b class="show-money">48.000<sub>đ</sub></b>
+                                            <button class="show-in-shop">THÊM VÀO GIỎ HÀNG</button>
+                                            <button class="show-buy">MUA NGAY</button>
+                                            <button class="show-like"><i class="bi bi-heart-fill"></i>Thêm vào yêu thích</button>
                                         </div>
                                     </div>
                                 </div>
@@ -587,6 +648,18 @@
                                             <a href="#" class="bro">Kamui Fujiwara</a>
                                             <p class="card-money col-5">75.000<sub>đ</sub></p>
                                         </div>
+                                        <div class="card-show-right">
+                                            <b class="show-head">Cuộc Xâm Lăng Của Bé Mực - Tập 8 (Tái Bản 2021)</b>
+                                            <a href="#" class="show-author">Anbe Masahiro</a>
+                                            <p class="show-text">Cuộc Xâm Lăng Của Bé Mực - Tập 8 Thật ra câu chuyện này tôi đã suy nghĩ từ trước rồi. 
+                                                Nhưng tôi chưa tập hợp những phác thảo ý tưởng thô và mất thời gian cho phần bối cảnh nên đã hoãn lại mãi. 
+                                                Rất may là cuối cùng cũng được phát hành. Thật khó để sử dụng nhân vật mới "ra lò", nhưng tôi nghĩ từ giờ tôi ...</p>
+                                            <a href="#" class="show-text-more">Xem thêm</a>
+                                            <b class="show-money">48.000<sub>đ</sub></b>
+                                            <button class="show-in-shop">THÊM VÀO GIỎ HÀNG</button>
+                                            <button class="show-buy">MUA NGAY</button>
+                                            <button class="show-like"><i class="bi bi-heart-fill"></i>Thêm vào yêu thích</button>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="carousel-body-item">
@@ -599,6 +672,18 @@
                                             <a href="#" class="bro">Kamui Fujiwara</a>
                                             <p class="card-money col-5">75.000<sub>đ</sub></p>
                                         </div>
+                                        <div class="card-show-right">
+                                            <b class="show-head">Cuộc Xâm Lăng Của Bé Mực - Tập 8 (Tái Bản 2021)</b>
+                                            <a href="#" class="show-author">Anbe Masahiro</a>
+                                            <p class="show-text">Cuộc Xâm Lăng Của Bé Mực - Tập 8 Thật ra câu chuyện này tôi đã suy nghĩ từ trước rồi. 
+                                                Nhưng tôi chưa tập hợp những phác thảo ý tưởng thô và mất thời gian cho phần bối cảnh nên đã hoãn lại mãi. 
+                                                Rất may là cuối cùng cũng được phát hành. Thật khó để sử dụng nhân vật mới "ra lò", nhưng tôi nghĩ từ giờ tôi ...</p>
+                                            <a href="#" class="show-text-more">Xem thêm</a>
+                                            <b class="show-money">48.000<sub>đ</sub></b>
+                                            <button class="show-in-shop">THÊM VÀO GIỎ HÀNG</button>
+                                            <button class="show-buy">MUA NGAY</button>
+                                            <button class="show-like"><i class="bi bi-heart-fill"></i>Thêm vào yêu thích</button>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="carousel-body-item">
@@ -609,6 +694,18 @@
                                             <a href="#" class="card-text">Blue Flag - Tập 3</a>
                                             <a href="#" class="bro">Kaito</a>
                                             <p class="card-money col-5">45.000<sub>đ</sub></p>
+                                        </div>
+                                        <div class="card-show-right">
+                                            <b class="show-head">Cuộc Xâm Lăng Của Bé Mực - Tập 8 (Tái Bản 2021)</b>
+                                            <a href="#" class="show-author">Anbe Masahiro</a>
+                                            <p class="show-text">Cuộc Xâm Lăng Của Bé Mực - Tập 8 Thật ra câu chuyện này tôi đã suy nghĩ từ trước rồi. 
+                                                Nhưng tôi chưa tập hợp những phác thảo ý tưởng thô và mất thời gian cho phần bối cảnh nên đã hoãn lại mãi. 
+                                                Rất may là cuối cùng cũng được phát hành. Thật khó để sử dụng nhân vật mới "ra lò", nhưng tôi nghĩ từ giờ tôi ...</p>
+                                            <a href="#" class="show-text-more">Xem thêm</a>
+                                            <b class="show-money">48.000<sub>đ</sub></b>
+                                            <button class="show-in-shop">THÊM VÀO GIỎ HÀNG</button>
+                                            <button class="show-buy">MUA NGAY</button>
+                                            <button class="show-like"><i class="bi bi-heart-fill"></i>Thêm vào yêu thích</button>
                                         </div>
                                     </div>
                                 </div>
@@ -622,6 +719,18 @@
                                             <a href="#" class="bro">Tastuki Nohda</a>
                                             <p class="card-money col-5">20.000<sub>đ</sub></p>
                                         </div>
+                                        <div class="card-show-right">
+                                            <b class="show-head">Cuộc Xâm Lăng Của Bé Mực - Tập 8 (Tái Bản 2021)</b>
+                                            <a href="#" class="show-author">Anbe Masahiro</a>
+                                            <p class="show-text">Cuộc Xâm Lăng Của Bé Mực - Tập 8 Thật ra câu chuyện này tôi đã suy nghĩ từ trước rồi. 
+                                                Nhưng tôi chưa tập hợp những phác thảo ý tưởng thô và mất thời gian cho phần bối cảnh nên đã hoãn lại mãi. 
+                                                Rất may là cuối cùng cũng được phát hành. Thật khó để sử dụng nhân vật mới "ra lò", nhưng tôi nghĩ từ giờ tôi ...</p>
+                                            <a href="#" class="show-text-more">Xem thêm</a>
+                                            <b class="show-money">48.000<sub>đ</sub></b>
+                                            <button class="show-in-shop">THÊM VÀO GIỎ HÀNG</button>
+                                            <button class="show-buy">MUA NGAY</button>
+                                            <button class="show-like"><i class="bi bi-heart-fill"></i>Thêm vào yêu thích</button>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="carousel-body-item">
@@ -633,6 +742,18 @@
                                             </a>
                                             <a href="#" class="bro">Yellow Tanabe</a>
                                             <p class="card-money col-5">30.000<sub>đ</sub></p>
+                                        </div>
+                                        <div class="card-show-left">
+                                            <b class="show-head">Cuộc Xâm Lăng Của Bé Mực - Tập 8 (Tái Bản 2021)</b>
+                                            <a href="#" class="show-author">Anbe Masahiro</a>
+                                            <p class="show-text">Cuộc Xâm Lăng Của Bé Mực - Tập 8 Thật ra câu chuyện này tôi đã suy nghĩ từ trước rồi. 
+                                                Nhưng tôi chưa tập hợp những phác thảo ý tưởng thô và mất thời gian cho phần bối cảnh nên đã hoãn lại mãi. 
+                                                Rất may là cuối cùng cũng được phát hành. Thật khó để sử dụng nhân vật mới "ra lò", nhưng tôi nghĩ từ giờ tôi ...</p>
+                                            <a href="#" class="show-text-more">Xem thêm</a>
+                                            <b class="show-money">48.000<sub>đ</sub></b>
+                                            <button class="show-in-shop">THÊM VÀO GIỎ HÀNG</button>
+                                            <button class="show-buy">MUA NGAY</button>
+                                            <button class="show-like"><i class="bi bi-heart-fill"></i>Thêm vào yêu thích</button>
                                         </div>
                                     </div>
                                 </div>

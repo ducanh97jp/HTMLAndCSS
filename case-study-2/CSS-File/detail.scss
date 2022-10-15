@@ -758,13 +758,11 @@ body {
 
         .card-show-right {
             @include show-content();
-            height: 490px;
             left: 90%;
         }
 
         .card-show-left {
             @include show-content();
-            height: 490px;
             left: -220px;
         }
     }
@@ -963,6 +961,9 @@ body {
     padding: 0;
     margin-top: 10px;
     background-color: white;
+    .carousel-inner {
+        overflow: visible;
+    }
 
     .main-together-head {
         background-color: white;
@@ -1047,11 +1048,37 @@ body {
                 margin: 0;
                 font-size: $font-size;
             }
+            .card-show-right {
+                @include show-content();
+                left: 90%;
+            }
+    
+            .card-show-left {
+                @include show-content();
+                left: -220px;
+            }
+        }
+        .card:hover {
+            .card-show-right {
+                display: block;
+            }
+    
+            .card-show-left {
+                display: block;
+            }
         }
 
     }
 
-    button {
+    .carousel-control-prev {
+        background-color: rgb(131, 129, 129);
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        position: absolute;
+        top: 80px;
+    }
+    .carousel-control-next {
         background-color: rgb(131, 129, 129);
         height: 25px;
         width: 25px;

@@ -513,7 +513,6 @@ body {
   padding: 10px;
   border: 1px solid rgb(194, 194, 194);
   border-radius: 10px;
-  height: 490px;
   left: 90%;
 }
 .main-same-kind-list .container .card .card-show-right .show-head {
@@ -590,7 +589,6 @@ body {
   padding: 10px;
   border: 1px solid rgb(194, 194, 194);
   border-radius: 10px;
-  height: 490px;
   left: -220px;
 }
 .main-same-kind-list .container .card .card-show-left .show-head {
@@ -817,6 +815,9 @@ body {
   margin-top: 10px;
   background-color: white;
 }
+.main-together .container .carousel-inner {
+  overflow: visible;
+}
 .main-together .container .main-together-head {
   background-color: white;
   padding-top: 15px;
@@ -890,7 +891,173 @@ body {
   margin: 0;
   font-size: 14px;
 }
-.main-together .container button {
+.main-together .container .carousel-body .card .card-show-right {
+  position: absolute;
+  width: 220px;
+  background-color: #f8f9fa;
+  top: 0;
+  display: none;
+  z-index: 1;
+  padding: 10px;
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 10px;
+  left: 90%;
+}
+.main-together .container .carousel-body .card .card-show-right .show-head {
+  font-size: 14px;
+  display: block;
+}
+.main-together .container .carousel-body .card .card-show-right .show-author {
+  font-size: 12px;
+  text-decoration: none;
+  color: rgb(24, 136, 102);
+}
+.main-together .container .carousel-body .card .card-show-right .show-author:hover {
+  text-decoration: underline;
+}
+.main-together .container .carousel-body .card .card-show-right .show-text {
+  font-size: 12px;
+  margin: 0;
+}
+.main-together .container .carousel-body .card .card-show-right .show-text-more {
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+}
+.main-together .container .carousel-body .card .card-show-right .show-text-more:hover {
+  text-decoration: underline;
+}
+.main-together .container .carousel-body .card .card-show-right .show-money {
+  color: tomato;
+}
+.main-together .container .carousel-body .card .card-show-right .show-in-shop {
+  border: none;
+  height: 50px;
+  width: 200px;
+  margin: 5px 0;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(24, 136, 102);
+}
+.main-together .container .carousel-body .card .card-show-right .show-in-shop:hover {
+  background-color: tomato;
+}
+.main-together .container .carousel-body .card .card-show-right .show-buy {
+  border: none;
+  height: 50px;
+  width: 200px;
+  margin: 5px 0;
+  border-radius: 5px;
+  color: white;
+  background-color: tomato;
+}
+.main-together .container .carousel-body .card .card-show-right .show-buy:hover {
+  background-color: rgb(208, 82, 60);
+}
+.main-together .container .carousel-body .card .card-show-right .show-like {
+  border: none;
+  height: 50px;
+  width: 200px;
+  margin: 5px 0;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: white;
+}
+.main-together .container .carousel-body .card .card-show-right .show-like .bi {
+  color: red;
+  padding-right: 5px;
+}
+.main-together .container .carousel-body .card .card-show-left {
+  position: absolute;
+  width: 220px;
+  background-color: #f8f9fa;
+  top: 0;
+  display: none;
+  z-index: 1;
+  padding: 10px;
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 10px;
+  left: -220px;
+}
+.main-together .container .carousel-body .card .card-show-left .show-head {
+  font-size: 14px;
+  display: block;
+}
+.main-together .container .carousel-body .card .card-show-left .show-author {
+  font-size: 12px;
+  text-decoration: none;
+  color: rgb(24, 136, 102);
+}
+.main-together .container .carousel-body .card .card-show-left .show-author:hover {
+  text-decoration: underline;
+}
+.main-together .container .carousel-body .card .card-show-left .show-text {
+  font-size: 12px;
+  margin: 0;
+}
+.main-together .container .carousel-body .card .card-show-left .show-text-more {
+  text-decoration: none;
+  font-size: 12px;
+  display: block;
+}
+.main-together .container .carousel-body .card .card-show-left .show-text-more:hover {
+  text-decoration: underline;
+}
+.main-together .container .carousel-body .card .card-show-left .show-money {
+  color: tomato;
+}
+.main-together .container .carousel-body .card .card-show-left .show-in-shop {
+  border: none;
+  height: 50px;
+  width: 200px;
+  margin: 5px 0;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(24, 136, 102);
+}
+.main-together .container .carousel-body .card .card-show-left .show-in-shop:hover {
+  background-color: tomato;
+}
+.main-together .container .carousel-body .card .card-show-left .show-buy {
+  border: none;
+  height: 50px;
+  width: 200px;
+  margin: 5px 0;
+  border-radius: 5px;
+  color: white;
+  background-color: tomato;
+}
+.main-together .container .carousel-body .card .card-show-left .show-buy:hover {
+  background-color: rgb(208, 82, 60);
+}
+.main-together .container .carousel-body .card .card-show-left .show-like {
+  border: none;
+  height: 50px;
+  width: 200px;
+  margin: 5px 0;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: white;
+}
+.main-together .container .carousel-body .card .card-show-left .show-like .bi {
+  color: red;
+  padding-right: 5px;
+}
+.main-together .container .carousel-body .card:hover .card-show-right {
+  display: block;
+}
+.main-together .container .carousel-body .card:hover .card-show-left {
+  display: block;
+}
+.main-together .container .carousel-control-prev {
+  background-color: rgb(131, 129, 129);
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  position: absolute;
+  top: 80px;
+}
+.main-together .container .carousel-control-next {
   background-color: rgb(131, 129, 129);
   height: 25px;
   width: 25px;

@@ -1,4 +1,4 @@
-let h = 24;
+let h = 23;
 let m = 59;
 let s = 59;
 let data;

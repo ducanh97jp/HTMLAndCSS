@@ -230,7 +230,7 @@ body {
   position: absolute;
   width: 180px;
   top: 0;
-  left: 95%;
+  left: 80%;
   display: none;
   z-index: 1;
 }
@@ -309,8 +309,11 @@ body {
 }
 .main-right__new-product__list .card {
   border: none;
-  height: 300px;
+  height: 310px;
   position: relative;
+}
+.main-right__new-product__list .card .card-img {
+  text-align: center;
 }
 .main-right__new-product__list .card img {
   width: 150px;
@@ -530,7 +533,10 @@ body {
 }
 .main-right__hot-product__list .card {
   border: none;
-  height: 300px;
+  height: 310px;
+}
+.main-right__hot-product__list .card .card-img {
+  text-align: center;
 }
 .main-right__hot-product__list .card img {
   width: 150px;
